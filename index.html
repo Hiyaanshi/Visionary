@@ -53,7 +53,7 @@ function openCvReady() {
 
             dist = "FDS: "+'%.2f' %dist;
             font = cv.FONT_HERSHEY_SIMPLEX;
-            cv.putText(dst, str(dist), (x-60, y-10), font, 1,[255,255,0,0], 2, cv.LINE_AA);
+            cv.putText(dst, str(dist), {x:face.x-60, y:face.y-10}, font, 1,[255,255,0,0], 2, cv.LINE_AA);
             cv.rectangle(dst, point1, point2, [0, 255, 255, 0],4);
             
       
