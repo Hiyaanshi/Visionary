@@ -54,7 +54,7 @@ function openCvReady() {
         
             dst = "FDS: "+'%.2f' %dst
             font = cv2.FONT_HERSHEY_SIMPLEX
-            cv.putText(img, str(dst), (face.x-60, face.y-10), font, 1, (blue, green, red), 2, cv2.LINE_AA)
+            cv.putText(img, str(dst), (face.x-60, face.y-10), font, 1, (blue, green, red), 2, cv.LINE_AA)
         }
         cv.imshow("canvas_output", dst);
         // schedule next one.
