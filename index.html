@@ -51,10 +51,10 @@ function openCvReady() {
             let point2 = new cv.Point(face.x + face.width, face.y + face.height);
             let dist = 6421/face.width;
 
-             dst = "FDS: "+'%.2f' %dist;
-             font = cv.FONT_HERSHEY_SIMPLEX;
-             cv.putText(img, str(dst), (x-60, y-10), font, 1,[255,255,0,0], 2, cv.LINE_AA);
-             cv.rectangle(dst, point1, point2, [0, 255, 255, 0],4);
+            dist = "FDS: "+'%.2f' %dist;
+            font = cv.FONT_HERSHEY_SIMPLEX;
+            cv.putText(dst, str(dist), (x-60, y-10), font, 1,[255,255,0,0], 2, cv.LINE_AA);
+            cv.rectangle(dst, point1, point2, [0, 255, 255, 0],4);
             
       
            
