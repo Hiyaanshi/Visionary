@@ -53,8 +53,8 @@ function openCvReady() {
             let dist = 6421 / w;
         
             dist = "FDS: "+'%.2f' %dst;
-            font = cv.FONT_HERSHEY_SIMPLEX;
-            cv.putText(img, str(dist), {x:face.x-60, y:face.y-10}, font, 1, (blue, green, red), 2, cv.LINE_AA);
+      
+            document.write(dist);
         }
         cv.imshow("canvas_output", dst);
         // schedule next one.
