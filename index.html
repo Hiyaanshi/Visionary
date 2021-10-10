@@ -50,11 +50,11 @@ function openCvReady() {
             let point1 = new cv.Point(face.x, face.y);
             let point2 = new cv.Point(face.x + face.width, face.y + face.height);
             cv.rectangle(dst, point1, point2, [0, 255, 255, 0],4);
-            dst = 6421 / w
+            let dist = 6421 / w
         
-            dst = "FDS: "+'%.2f' %dst
+            dist = "FDS: "+'%.2f' %dst
             font = cv2.FONT_HERSHEY_SIMPLEX
-            cv.putText(img, str(dst), (face.x-60, face.y-10), font, 1, (blue, green, red), 2, cv.LINE_AA)
+            cv.putText(img, str(dist), (face.x-60, face.y-10), font, 1, (blue, green, red), 2, cv.LINE_AA)
         }
         cv.imshow("canvas_output", dst);
         // schedule next one.
